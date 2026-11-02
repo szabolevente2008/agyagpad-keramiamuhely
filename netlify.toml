@@ -1,0 +1,37 @@
+[build]
+  publish = "."
+  command = ""
+
+# A .html útvonalak és a relatív linkek változatlanok maradnak.
+[build.processing.html]
+  pretty_urls = false
+
+# Létező statikus fájlokat a szabály nem ír felül.
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+  force = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+
+# Nincs immutable: a fájlnevek nem tartalmaznak verziószámot.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, must-revalidate"
