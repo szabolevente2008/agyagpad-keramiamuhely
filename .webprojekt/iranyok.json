@@ -1,0 +1,93 @@
+{
+  "directions": [
+    {
+      "id": 1,
+      "slug": "a-mazproba",
+      "name": "A mázpróba",
+      "description": "A keramikusok mázpróba-lapjai a visszatérő motívum: a tanfolyamok, a tények és a gombok egy-egy színes, enyhén csurgatott szélű agyaglapon ülnek, mintha a műhely falán lógnának. Tipografikus hero egy mázpróba-táblával, moduláris blokkok, kőagyag háttér, szeladon, okker és kobalt mázszínek.",
+      "rationale": "A műhely saját világából jön, a kicsit játékos hangulatot hozza zsúfoltság nélkül.",
+      "palette": {
+        "primary": "#3F6B57",
+        "secondary": "#C08A3E",
+        "accent": "#34508C",
+        "bg": "#E9E4DA",
+        "surface": "#DCD5C7",
+        "text": "#2B2722",
+        "muted": "#6E665C"
+      },
+      "fonts": {
+        "heading": { "family": "Bricolage Grotesque", "fallback": "system-ui, sans-serif" },
+        "body": { "family": "Literata", "fallback": "Georgia, serif" },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,400&display=swap"
+      },
+      "contrast_axes": {
+        "density": "balanced",
+        "typography": "expressive-grotesque + bookish-serif",
+        "hero": "typographic-with-tile-board",
+        "visual_metaphor": "studio (glaze test board)",
+        "section_rhythm": "modular-blocks",
+        "shape": "mixed (tile corners, drip edges)"
+      }
+    },
+    {
+      "id": 2,
+      "slug": "udvari-muhely",
+      "name": "Udvari műhely",
+      "description": "Fotóközpontú, magazinszerű oldal. Teljes szélességű hero közeli képpel agyagos kezekről a korongon, Dóra kézírásos jegyzetei a képek szélén. Váltakozó elrendezések, len háttér, dió, moha és mustár. Lent rajzolt kis térkép a HÉV-től az udvarig.",
+      "rationale": "A szentendrei kirándulás és a műhely hangulata adja el a tanfolyamot: a legmelegebb, legszemélyesebb irány.",
+      "palette": {
+        "primary": "#5A3E2B",
+        "secondary": "#5F6B3A",
+        "accent": "#D9A441",
+        "bg": "#EFE8DC",
+        "surface": "#E4DACA",
+        "text": "#2A211B",
+        "muted": "#76695C"
+      },
+      "fonts": {
+        "heading": { "family": "Alegreya", "fallback": "Georgia, serif" },
+        "body": { "family": "Work Sans", "fallback": "system-ui, sans-serif" },
+        "accent": { "family": "Caveat", "fallback": "cursive" },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..800;1,400..600&family=Work+Sans:wght@300..600&family=Caveat:wght@500..700&display=swap"
+      },
+      "contrast_axes": {
+        "density": "spacious",
+        "typography": "humanist-serif + grotesque, handwritten notes",
+        "hero": "full-bleed-image",
+        "visual_metaphor": "editorial + organic",
+        "section_rhythm": "alternating",
+        "shape": "soft organic image masks"
+      }
+    },
+    {
+      "id": 3,
+      "slug": "forog-a-korong",
+      "name": "Forog a korong",
+      "description": "Merészebb, plakátszerű irány. A hero egy nagy, lassan forgó kör (a korong), köré íródik a fő mondat. A kör visszatér a navigációban, a lépéseknél és a gombokon. Rózsás agyag háttér, oxidvörös, mélybarna és szilvakék máz, egy sötét invertált szakasszal.",
+      "rationale": "A 25–45 éves városi közönségnek frissebb, grafikusabb hatású, de földszínű marad.",
+      "palette": {
+        "primary": "#8E3B26",
+        "secondary": "#3B2A22",
+        "accent": "#4B4E7A",
+        "bg": "#F1DCCF",
+        "surface": "#E8C9B7",
+        "text": "#2E211C",
+        "muted": "#7B5E52"
+      },
+      "fonts": {
+        "heading": { "family": "Unbounded", "fallback": "system-ui, sans-serif" },
+        "body": { "family": "Figtree", "fallback": "system-ui, sans-serif" },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@300..800&family=Figtree:ital,wght@0,300..700;1,400&display=swap"
+      },
+      "contrast_axes": {
+        "density": "balanced-to-dense",
+        "typography": "wide display + clean sans, extreme size contrast",
+        "hero": "typographic + rotating circle",
+        "visual_metaphor": "spatial / graphic poster",
+        "section_rhythm": "asymmetric",
+        "shape": "circles and pills"
+      }
+    }
+  ],
+  "total": 3
+}
