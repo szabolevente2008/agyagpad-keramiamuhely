@@ -27,6 +27,6 @@
 - [x] GitHub-verziókövetés
 - [x] SEO-alapok: title, meta description, címsor-hierarchia, alt szövegek, WebP képek srcset-tel, sitemap, robots.txt, strukturált adat
 - [x] GA4 (G-6SYSQX1FZ9, „Vikingo vizsga” fiók), csak a sütibannerben adott hozzájárulás után mér
-- [ ] Search Console
+- [x] Search Console: tulajdonjog igazolva (HTML-fájl), sitemap.xml beküldve
 - [x] Esettanulmány: `beadando/esettanulmany.md`
 - [ ] Saját domain (nem kértük, a netlify.app cím elfogadott)
