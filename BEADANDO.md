@@ -26,6 +26,7 @@
 - [x] Működő űrlap: a próbaüzenet 2026.11.02.-én megérkezett (Netlify Forms, „jelentkezes”)
 - [x] GitHub-verziókövetés
 - [x] SEO-alapok: title, meta description, címsor-hierarchia, alt szövegek, WebP képek srcset-tel, sitemap, robots.txt, strukturált adat
-- [ ] GA4 + Search Console (a sütibanner kész, a GA4-azonosító a `js/main.js` első sorába kerül)
+- [x] GA4 (G-6SYSQX1FZ9, „Vikingo vizsga” fiók), csak a sütibannerben adott hozzájárulás után mér
+- [ ] Search Console
 - [x] Esettanulmány: `beadando/esettanulmany.md`
 - [ ] Saját domain (nem kértük, a netlify.app cím elfogadott)

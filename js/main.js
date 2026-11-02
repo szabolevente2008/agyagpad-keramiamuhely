@@ -1,4 +1,4 @@
-const GA_MEASUREMENT_ID = '';
+const GA_MEASUREMENT_ID = 'G-6SYSQX1FZ9';
 // Aktiváláskor a GA4 adminban is állíts be 2 hónapos eseménymegőrzést.
 
 (() => {
