@@ -1,4 +1,5 @@
 # Vizsgamunka beadandó: Agyagpad kerámiaműhely
+n> **Beadva:** 2026.11.02., a kurzus Notion-űrlapján (szabolevente2008@gmail.com).
 
 ## Linkek
 - **Élő oldal:** https://agyagpad-szentendre.netlify.app/
