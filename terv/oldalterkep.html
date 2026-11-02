@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Agyagpad: oldaltérkép</title>
+<style>
+  :root { --ink:#2b2722; --muted:#6e665c; --line:#b9b1a4; --box:#f6f3ee; --hi:#3f6b57; --cta:#c08a3e; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:var(--ink); font:15px/1.4 "Segoe UI", system-ui, sans-serif; }
+  .sheet { width:1600px; padding:48px 56px 56px; }
+  header { display:flex; justify-content:space-between; align-items:flex-end; border-bottom:2px solid var(--ink); padding-bottom:16px; margin-bottom:36px; }
+  h1 { margin:0; font-size:30px; }
+  header p { margin:4px 0 0; color:var(--muted); }
+  .legend { display:flex; gap:20px; font-size:13px; color:var(--muted); }
+  .legend span::before { content:""; display:inline-block; width:12px; height:12px; margin-right:6px; vertical-align:-1px; border-radius:2px; }
+  .legend .l-cta::before { background:var(--cta); }
+  .legend .l-page::before { background:var(--hi); }
+  .legend .l-extra::before { border:1.5px dashed var(--muted); }
+  .root { width:300px; margin:0 auto; text-align:center; background:var(--hi); color:#fff; border-radius:8px; padding:14px; font-weight:700; font-size:18px; }
+  .root small { display:block; font-weight:400; opacity:.85; font-size:13px; }
+  .stem { width:2px; height:28px; background:var(--line); margin:0 auto; }
+  .bar { height:2px; background:var(--line); margin:0 calc(12.5% - 0px); }
+  .cols { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; }
+  .col { position:relative; padding-top:28px; }
+  .col::before { content:""; position:absolute; top:0; left:50%; width:2px; height:28px; background:var(--line); }
+  .page { background:var(--hi); color:#fff; border-radius:8px; padding:12px 14px; font-weight:700; font-size:17px; }
+  .page small { display:block; font-weight:400; font-size:12.5px; opacity:.85; }
+  ol { list-style:none; margin:10px 0 0; padding:0; display:grid; gap:6px; }
+  li { background:var(--box); border:1px solid #e3ddd3; border-radius:6px; padding:7px 10px; font-size:13.5px; }
+  li b { font-weight:600; }
+  li.cta { border-left:4px solid var(--cta); }
+  .extras { display:flex; gap:16px; margin-top:32px; padding-top:20px; border-top:1px solid #e3ddd3; align-items:center; }
+  .extras h2 { font-size:15px; margin:0 8px 0 0; color:var(--muted); font-weight:600; }
+  .extra { border:1.5px dashed var(--muted); border-radius:6px; padding:8px 14px; font-size:13.5px; }
+  .flow { margin-top:28px; background:var(--box); border-radius:8px; padding:16px 20px; display:flex; gap:12px; align-items:center; font-size:14px; flex-wrap:wrap; }
+  .flow b { color:var(--hi); }
+  .flow .arrow { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div>
+      <h1>Agyagpad kerámiaműhely: oldaltérkép</h1>
+      <p>Vizsgamunka, v1 (indulás). Fő cél: tanfolyami jelentkezés. A szakaszok sorrendje fentről lefelé.</p>
+    </div>
+    <div class="legend"><span class="l-page">oldal</span><span class="l-cta">szakasz gombbal (CTA)</span><span class="l-extra">kiegészítő oldal</span></div>
+  </header>
+
+  <div class="root">Fejléc navigáció<small>Logó · Tanfolyamok · Műhely · Kapcsolat · „Jelentkezem” gomb</small></div>
+  <div class="stem"></div>
+  <div class="bar"></div>
+  <div class="cols">
+    <div class="col">
+      <div class="page">Főoldal<small>index.html</small></div>
+      <ol>
+        <li class="cta"><b>Hero:</b> fő ígéret, korongozó fotó, „Jelentkezem” + „Utalványt adnék”</li>
+        <li><b>Így megy egy alkalom:</b> 4 lépés, a megérkezéstől az elvitelig</li>
+        <li class="cta"><b>Tanfolyamok röviden:</b> 3 kártya árral</li>
+        <li><b>Miért az Agyagpad:</b> 4 tény (max. 6 fő, Dóra tanít, minden az árban, nem kell tapasztalat)</li>
+        <li><b>A műhely és Dóra:</b> rövid bemutató, link</li>
+        <li class="cta"><b>Ajándék:</b> utalvány és egyedi bögre</li>
+        <li><b>Szentendre:</b> nyitvatartás, cím, HÉV</li>
+        <li class="cta"><b>Záró CTA sáv</b></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="page">Tanfolyamok<small>tanfolyamok.html</small></div>
+      <ol>
+        <li><b>Bevezető:</b> kinek szól, mi van az árban</li>
+        <li class="cta"><b>Kóstoló:</b> 3 óra, 19 900 Ft/fő</li>
+        <li class="cta"><b>Kezdő kurzus:</b> 4 × 3 óra, 69 000 Ft/fő</li>
+        <li class="cta"><b>Csapatépítő:</b> 6 főig 129 000 Ft</li>
+        <li><b>Mi van benne az árban</b></li>
+        <li class="cta"><b>Ajándékutalvány</b></li>
+        <li><b>GYIK</b> (lenyitható kérdések)</li>
+        <li class="cta"><b>Záró CTA sáv</b></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="page">Műhely és alkotó<small>muhely.html</small></div>
+      <ol>
+        <li><b>Dóra története</b></li>
+        <li><b>A műhely:</b> udvari műhely, korongok, kemence</li>
+        <li><b>A darabok:</b> bögrék, tálak, tányérok (képrács)</li>
+        <li><b>Műhelybolt:</b> csütörtöktől vasárnapig 10–18</li>
+        <li class="cta"><b>Záró CTA sáv</b></li>
+      </ol>
+    </div>
+    <div class="col">
+      <div class="page">Kapcsolat<small>kapcsolat.html</small></div>
+      <ol>
+        <li class="cta"><b>Jelentkezési űrlap</b> (Netlify Forms): tanfolyam típusa, létszám, időpont, üzenet</li>
+        <li><b>Elérhetőség:</b> cím, e-mail, telefon, nyitvatartás</li>
+        <li><b>Megközelítés:</b> térkép, HÉV, parkolás</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="extras">
+    <h2>Kiegészítő oldalak</h2>
+    <div class="extra">Köszönjük (űrlap után)</div>
+    <div class="extra">Adatkezelési tájékoztató (láblécből)</div>
+    <div class="extra">404</div>
+    <div class="extra">Lábléc minden oldalon: navigáció, cím, nyitvatartás</div>
+  </div>
+
+  <div class="flow">
+    <b>Fő útvonal:</b> Főoldal hero <span class="arrow">→</span> Tanfolyamok (ár és menet) <span class="arrow">→</span> „Jelentkezem” <span class="arrow">→</span> Kapcsolat űrlap (típus előre kiválasztva) <span class="arrow">→</span> Köszönjük
+  </div>
+</div>
+</body>
+</html>

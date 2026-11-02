@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<title>Agyagpad: főoldal drótváz</title>
+<style>
+  * { box-sizing:border-box; }
+  body { margin:0; background:#fff; color:#2b2722; font:14px/1.35 "Segoe UI", system-ui, sans-serif; }
+  .sheet { width:1600px; padding:48px 56px; }
+  header { border-bottom:2px solid #2b2722; padding-bottom:16px; margin-bottom:32px; }
+  h1 { margin:0; font-size:30px; }
+  header p { margin:4px 0 0; color:#6e665c; }
+  .wrap { display:grid; grid-template-columns:1fr 340px; gap:56px; align-items:start; }
+  .label { font-weight:600; color:#6e665c; margin-bottom:8px; }
+  .frame { border:2px solid #2b2722; border-radius:10px; overflow:hidden; background:#fbfaf8; }
+  .s { border-bottom:1px dashed #c9c2b6; padding:14px 18px; position:relative; }
+  .s:last-child { border-bottom:0; }
+  .tag { position:absolute; top:6px; right:10px; font-size:11px; color:#8a8174; }
+  .row { display:flex; gap:12px; align-items:center; }
+  .grid { display:grid; gap:10px; }
+  .b { background:#e3ddd3; border-radius:4px; }
+  .img { background:#d3ccc0 repeating-linear-gradient(45deg, transparent 0 10px, rgba(255,255,255,.35) 10px 20px); border-radius:4px; display:flex; align-items:center; justify-content:center; color:#6e665c; font-size:12px; }
+  .t { height:10px; background:#cfc7ba; border-radius:3px; }
+  .h { height:22px; background:#2b2722; border-radius:3px; opacity:.8; }
+  .btn { background:#c08a3e; color:#fff; border-radius:999px; padding:7px 14px; font-size:12px; font-weight:600; white-space:nowrap; }
+  .btn.o { background:transparent; color:#2b2722; border:1.5px solid #2b2722; }
+  .dark { background:#3f6b57; }
+  .dark .t, .dark .h { background:#fff; opacity:.75; }
+  .logo { font-weight:800; }
+  .nav { display:flex; gap:14px; color:#6e665c; font-size:12px; margin-left:auto; }
+  .m .s { padding:12px; }
+  .note { font-size:12px; color:#6e665c; margin-top:6px; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <h1>Agyagpad: főoldal drótváz (asztali és mobil)</h1>
+    <p>Szakaszok sorrendje és a gombok helye, színek és végleges képek nélkül. Narancs: gomb (CTA), zöld: kiemelt sáv.</p>
+  </header>
+  <div class="wrap">
+    <div>
+      <div class="label">Asztali nézet (1440 px)</div>
+      <div class="frame">
+        <div class="s row"><span class="logo">Agyagpad</span><span class="nav">Tanfolyamok · Műhely · Kapcsolat</span><span class="btn">Jelentkezem</span></div>
+        <div class="s" style="display:grid;grid-template-columns:1.1fr 1fr;gap:20px;padding:26px 18px">
+          <div class="grid" style="align-content:center"><div class="h" style="width:90%"></div><div class="h" style="width:70%"></div><div class="t" style="width:80%"></div><div class="t" style="width:60%"></div><div class="row" style="margin-top:8px"><span class="btn">Jelentkezem</span><span class="btn o">Utalványt adnék</span></div></div>
+          <div class="img" style="height:220px">fotó: kezek a korongon</div>
+          <span class="tag">hero</span>
+        </div>
+        <div class="s"><div class="h" style="width:30%;margin-bottom:10px"></div><div class="grid" style="grid-template-columns:repeat(4,1fr)"><div class="b" style="height:70px"></div><div class="b" style="height:70px"></div><div class="b" style="height:70px"></div><div class="b" style="height:70px"></div></div><span class="tag">így megy egy alkalom: 4 lépés</span></div>
+        <div class="s"><div class="h" style="width:25%;margin-bottom:10px"></div><div class="grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="grid b" style="padding:10px"><div class="img" style="height:70px"></div><div class="t"></div><div class="t" style="width:50%"></div><span class="btn" style="justify-self:start">Részletek</span></div>
+          <div class="grid b" style="padding:10px"><div class="img" style="height:70px"></div><div class="t"></div><div class="t" style="width:50%"></div><span class="btn" style="justify-self:start">Részletek</span></div>
+          <div class="grid b" style="padding:10px"><div class="img" style="height:70px"></div><div class="t"></div><div class="t" style="width:50%"></div><span class="btn" style="justify-self:start">Részletek</span></div>
+        </div><span class="tag">tanfolyamok röviden: kóstoló, kezdő kurzus, csapatépítő, árral</span></div>
+        <div class="s dark"><div class="grid" style="grid-template-columns:repeat(4,1fr)"><div class="grid"><div class="h" style="width:40%"></div><div class="t"></div></div><div class="grid"><div class="h" style="width:40%"></div><div class="t"></div></div><div class="grid"><div class="h" style="width:40%"></div><div class="t"></div></div><div class="grid"><div class="h" style="width:40%"></div><div class="t"></div></div></div><span class="tag" style="color:#fff">miért az Agyagpad: 4 tény</span></div>
+        <div class="s" style="display:grid;grid-template-columns:1fr 1.3fr;gap:20px"><div class="img" style="height:130px">fotó: Dóra a műhelyben</div><div class="grid" style="align-content:center"><div class="h" style="width:60%"></div><div class="t"></div><div class="t"></div><div class="t" style="width:70%"></div></div><span class="tag">a műhely és Dóra</span></div>
+        <div class="s" style="display:grid;grid-template-columns:1.3fr 1fr;gap:20px"><div class="grid" style="align-content:center"><div class="h" style="width:50%"></div><div class="t"></div><div class="t" style="width:60%"></div><span class="btn" style="justify-self:start">Utalványt adnék</span></div><div class="img" style="height:110px">fotó: bögrék</div><span class="tag">ajándék</span></div>
+        <div class="s" style="display:grid;grid-template-columns:1fr 1fr;gap:20px"><div class="grid"><div class="h" style="width:50%"></div><div class="t"></div><div class="t" style="width:70%"></div></div><div class="img" style="height:90px">térkép / Szentendre</div><span class="tag">Szentendre: nyitvatartás, cím, HÉV</span></div>
+        <div class="s dark row" style="justify-content:space-between;padding:22px 18px"><div class="h" style="width:45%"></div><span class="btn">Jelentkezem</span><span class="tag" style="color:#fff">záró CTA</span></div>
+        <div class="s" style="background:#e3ddd3"><div class="grid" style="grid-template-columns:repeat(4,1fr)"><div class="t"></div><div class="t"></div><div class="t"></div><div class="t"></div></div><span class="tag">lábléc: navigáció, cím, nyitvatartás, adatkezelés</span></div>
+      </div>
+    </div>
+    <div>
+      <div class="label">Mobil nézet (375 px)</div>
+      <div class="frame m">
+        <div class="s row"><span class="logo">Agyagpad</span><span class="btn" style="margin-left:auto">Jelentkezem</span><span style="font-size:18px">☰</span></div>
+        <div class="s grid"><div class="img" style="height:150px">fotó</div><div class="h"></div><div class="h" style="width:70%"></div><div class="t"></div><span class="btn" style="text-align:center">Jelentkezem</span><span class="btn o" style="text-align:center">Utalványt adnék</span></div>
+        <div class="s grid"><div class="h" style="width:60%"></div><div class="b" style="height:44px"></div><div class="b" style="height:44px"></div><div class="b" style="height:44px"></div><div class="b" style="height:44px"></div></div>
+        <div class="s grid"><div class="h" style="width:50%"></div><div class="b" style="height:90px"></div><div class="b" style="height:90px"></div><div class="b" style="height:90px"></div></div>
+        <div class="s dark grid"><div class="t"></div><div class="t"></div><div class="t"></div><div class="t"></div></div>
+        <div class="s grid"><div class="img" style="height:90px"></div><div class="t"></div><div class="t" style="width:70%"></div></div>
+        <div class="s grid"><div class="t"></div><span class="btn" style="text-align:center">Utalványt adnék</span></div>
+        <div class="s grid"><div class="t"></div><div class="img" style="height:60px"></div></div>
+        <div class="s dark"><span class="btn" style="display:block;text-align:center">Jelentkezem</span></div>
+      </div>
+      <p class="note">Mobilon minden szakasz egy oszlopba rendeződik, a fejlécben a „Jelentkezem” gomb mindig elérhető.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
